@@ -29,12 +29,6 @@ This repository includes:
    4. [Report Results](#report-result)
 5. [Citation](#citation)
 
-Run these scripts to get question-solving records from different LLMs:
-
-sh shells/question_solving/run_local_models.sh
-sh shells/question_solving/run_anthropic_models.sh
-sh shells/question_solving/run_gpt_models.sh
-
 ---
 
 ## Project Structure
