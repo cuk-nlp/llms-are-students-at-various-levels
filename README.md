@@ -1,10 +1,15 @@
 # 👩‍🏫 LLMs are Students at Various Levels
-This repository contains the official implementation of "[**Large Language Models are Students at Various Levels: Zero-shot Question Difficulty Estimation**](https://openreview.net/pdf?id=whRJT6j4EM)".
+This repository contains the official implementation of "[**Large Language Models are Students at Various Levels: Zero-shot Question Difficulty Estimation**](https://aclanthology.org/2024.findings-emnlp.477/)".
 
 ![Overview](assets/overview_1.png)
-> Jae-Woo Park<sup>1\*</sup>, Seong-Jin Park<sup>1\*</sup>, Hyun-Sik Won<sup>1</sup>, Kang-Min Kim<sup>1†</sup>  
-<sup>1 </sup>The Catholic University of Korea  
+> Jae-Woo Park<sup>1,2\*</sup>, Seong-Jin Park<sup>1,3\*</sup>, Hyun-Sik Won<sup>1</sup>, Kang-Min Kim<sup>1,4†</sup>  
+<sup>1 </sup>Department of Artificial Intelligence  
+<sup>2 </sup>School of Information, Communications, and Electronic Engineering  
+<sup>3 </sup>Department of Mathematics  
+<sup>4 </sup>Department of Data Science  
+The Catholic University of Korea, Bucheon, Republic of Korea  
 <sup>\* </sup>These authors contributed equally to this work. <sup>† </sup>Corresponding Author  
+
 
 This repository includes:
 - **LLaSA Setup**.
@@ -203,13 +208,22 @@ sh shells/llasa/run_report_3.sh  # Zero-shot LLaSA
 
 ## Citation
 ```bibtex
-@inproceedings{
-anonymous2024large,
-title={Large Language Models are Students at Various Levels: Zero-shot Question Difficulty Estimation},
-author={Anonymous},
-booktitle={Submitted to ACL Rolling Review - June 2024},
-year={2024},
-url={https://openreview.net/forum?id=whRJT6j4EM},
-note={under review}
+@inproceedings{park-etal-2024-large,
+    title = "Large Language Models are Students at Various Levels: Zero-shot Question Difficulty Estimation",
+    author = "Park, Jae-Woo  and
+      Park, Seong-Jin  and
+      Won, Hyun-Sik  and
+      Kim, Kang-Min",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.477",
+    pages = "8157--8177",
+    abstract = "Recent advancements in educational platforms have emphasized the importance of personalized education. Accurately estimating question difficulty based on the ability of the student group is essential for personalized question recommendations. Several studies have focused on predicting question difficulty using student question-solving records or textual information about the questions. However, these approaches require a large amount of student question-solving records and fail to account for the subjective difficulties perceived by different student groups. To address these limitations, we propose the LLaSA framework that utilizes large language models to represent students at various levels. Our proposed method, LLaSA and the zero-shot LLaSA, can estimate question difficulty both with and without students{'} question-solving records. In evaluations on the DBE-KT22 and ASSISTMents 2005{--}2006 benchmarks, the zero-shot LLaSA demonstrated a performance comparable to those of strong baseline models even without any training. When evaluated using the classification method, LLaSA outperformed the baseline models, achieving state-of-the-art performance. In addition, the zero-shot LLaSA showed a high correlation with the regressed IRT curve when compared to question difficulty derived from students{'} question-solving records, highlighting its potential for real-world applications.",
 }
 ```
